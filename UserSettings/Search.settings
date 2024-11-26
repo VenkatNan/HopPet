@@ -1,6 +1,5 @@
 trackSelection = true
 refreshSearchWindowsInPlayMode = false
-pickerAdvancedUI = false
 fetchPreview = true
 defaultFlags = 0
 keepOpen = false
@@ -11,9 +10,14 @@ showStatusBar = false
 scopes = {
 }
 providers = {
-	asset = {
-		active = true
-		priority = 25
+	performance = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
+	log = {
+		active = false
+		priority = 210
 		defaultAction = null
 	}
 	scene = {
@@ -26,6 +30,21 @@ providers = {
 		priority = 2500
 		defaultAction = null
 	}
+	store = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
+	asset = {
+		active = true
+		priority = 25
+		defaultAction = null
+	}
+	profilermarkers = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
 	find = {
 		active = true
 		priority = 25
@@ -34,26 +53,6 @@ providers = {
 	packages = {
 		active = false
 		priority = 90
-		defaultAction = null
-	}
-	profilermarkers = {
-		active = false
-		priority = 100
-		defaultAction = null
-	}
-	store = {
-		active = false
-		priority = 100
-		defaultAction = null
-	}
-	performance = {
-		active = false
-		priority = 100
-		defaultAction = null
-	}
-	log = {
-		active = false
-		priority = 210
 		defaultAction = null
 	}
 }
